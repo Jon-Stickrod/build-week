@@ -53,18 +53,27 @@ nav{
  
 }
 
-.imgs{
-    img{
-        width: 85%;
-        height: auto;
-        margin: 15px;
+.intro{
+    @include flex;
+    flex-direction: column;
+    .imgs{
+       // width: 100%;
+        img{
+            width: 85%;
+            height: auto;
+            margin: 15px;
+            
+        }
+        .extra{
+            display: none;
+        }
+        @include flex;
+        //border: 2px solid black;
+        padding: 5px;
+        justify-content: space-around;
+        
         
     }
-    @include flex;
-    //border: 2px solid black;
-    padding: 5px;
-    justify-content: space-around;
-    
 }
 .sec1-d2{
      
@@ -213,4 +222,73 @@ nav{
     flex-direction: column;
 
 }*/
+}
+
+@media (min-width: 600px){
+    
+    .about{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 40px;
+        
+        .sec2-d1{
+            @include LRpad;
+            @include flex;
+            align-content: center;
+            padding-right: 30px;
+            width: 50%;
+
+            p{
+                @include flex;
+            align-content: center;
+            }
+        }
+    }
+    .construction{
+        //@include flex;
+        //justify-content: center;
+        align-items: center;
+        
+
+        .sec3-d1{
+            width: 557px;  
+        }
+    }
+    .intro{
+
+        .imgs{
+
+            img{
+                width: 30%;
+                justify-content: space-between;
+            }
+            .extra{
+                display: block;
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1000px){
+    
+    .about{
+        .sec2-d1{
+            p{
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+        .sec2-d2{
+            h2{
+                font-size: 32px;
+line-height: 40px;
+            }
+            p{
+                font-size: 24px;
+line-height: 29px;
+            }
+        }
+    }
+    
 }

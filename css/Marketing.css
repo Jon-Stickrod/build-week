@@ -45,7 +45,18 @@ nav h1 {
   color: #F8F9F4;
 }
 
-.imgs {
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro .imgs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,10 +66,14 @@ nav h1 {
       justify-content: space-around;
 }
 
-.imgs img {
+.intro .imgs img {
   width: 85%;
   height: auto;
   margin: 15px;
+}
+
+.intro .imgs .extra {
+  display: none;
 }
 
 .sec1-d2 {
@@ -238,5 +253,70 @@ nav h1 {
     flex-direction: column;
 
 }*/
+}
+
+@media (min-width: 600px) {
+  .about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  .about .sec2-d1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 0%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-right: 30px;
+    width: 50%;
+  }
+  .about .sec2-d1 p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 0%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .construction {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .construction .sec3-d1 {
+    width: 557px;
+  }
+  .intro .imgs img {
+    width: 30%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .intro .imgs .extra {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .about .sec2-d1 p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .about .sec2-d2 h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about .sec2-d2 p {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 /*# sourceMappingURL=Marketing.css.map */
