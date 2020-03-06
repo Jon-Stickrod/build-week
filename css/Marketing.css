@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  max-width: 1440px;
 }
 
 nav {
@@ -10,8 +11,9 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: 50px;
   background-color: #bd7e4d;
@@ -29,6 +31,7 @@ nav .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 5%;
 }
 
 nav .logo img {
@@ -95,7 +98,7 @@ nav h1 {
   text-align: center;
   color: #466A66;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 }
 
 .about {
@@ -118,13 +121,14 @@ nav h1 {
   font-style: italic;
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 24px;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 25px;
 }
 
 .about .sec2-d2 {
+  line-height: 24px;
   background-color: #466A66;
   color: #F8F9F4;
   border-radius: 2px;
@@ -256,6 +260,13 @@ nav h1 {
 }
 
 @media (min-width: 600px) {
+  nav .logo {
+    margin-left: 2.5%;
+  }
+  .sec1-d2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   .about {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -265,6 +276,7 @@ nav h1 {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     margin-top: 40px;
+    margin-bottom: 70px;
   }
   .about .sec2-d1 {
     padding-left: 15px;
@@ -308,7 +320,7 @@ nav h1 {
 @media (min-width: 1000px) {
   .about .sec2-d1 p {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 35px;
   }
   .about .sec2-d2 h2 {
     font-size: 32px;
@@ -316,7 +328,7 @@ nav h1 {
   }
   .about .sec2-d2 p {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 35px;
   }
 }
 /*# sourceMappingURL=Marketing.css.map */
