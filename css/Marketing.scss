@@ -26,7 +26,7 @@ nav{
     @include flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     background-color: $twine;
     .menue{
@@ -256,9 +256,7 @@ nav{
             align-content: center;
             }
         }
-        .sec2-d2{
-
-        }
+        
     }
     .construction{
         //@include flex;
